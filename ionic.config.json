@@ -1,0 +1,7 @@
+{
+  "name": "Pacients ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

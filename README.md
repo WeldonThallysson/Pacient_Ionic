@@ -73,9 +73,7 @@ Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo 
    ```
 3. Inicie o servidor de desenvolvimento:
    ```sh
-   npm run dev
-   # ou
-   yarn dev
+   npx ionic serve
    ```
 
 ---

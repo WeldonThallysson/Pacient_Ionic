@@ -10,18 +10,18 @@ Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo 
 
 ### 🗂️ Tela de Listagem de Pacientes
 
-- Exibir uma lista de pacientes com nome, e-mail e telefone.
-- Possuir um campo de busca para filtrar pacientes pelo nome.
+- ✅ Exibir uma lista de pacientes com nome, e-mail e telefone.
+- ✅ Possuir um campo de busca para filtrar pacientes pelo nome.
 
-### 🗂️ Tela de Detalhes do Paciente
+### 🗂️ Tela de Detalhes do Paciente 
 
-- Exibir nome, e-mail, telefone, endereço e nome de usuário.
-- Botão para marcar o paciente como "em acompanhamento".
+- ✅ Exibir nome, e-mail, telefone, endereço e nome de usuário.
+- ✅ Botão para marcar o paciente como "em acompanhamento".
 
 ### 🗂️ Tela de Pacientes em Acompanhamento
 
-- Listar pacientes marcados como "em acompanhamento".
-- Permitir remoção de pacientes da lista.
+- ✅ Listar pacientes marcados como "em acompanhamento".
+- ✅ Permitir remoção de pacientes da lista.
 
 ### 📊 Consumo de API
 
@@ -40,7 +40,7 @@ Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo 
 
 ## 🛠️ Ferramentas Utilizadas
 
-- **Ionic 8**
+- **Ionic 8** 
 - **React**
 - **TypeScript**
 - **Zustand (Gerenciamento de estado global)**
@@ -55,7 +55,7 @@ Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo 
 
 - 🔍 **Filtro de pesquisa personalizado**
 - 🛠️ **Arquitetura de projeto e estrutura profissional**
-- 🌈 **Design limpo e simples**
+-     **Design limpo e simples**
 
 ---
 
@@ -95,13 +95,11 @@ Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo 
 
 ## 📊 Critérios de Avaliação
 
-- **Funcionalidade**: O aplicativo atende aos requisitos propostos?
-- **Organização do Código**: Estrutura e boas práticas.
-- **Usabilidade**: Experiência do usuário e design responsivo.
-- **Performance**: Carregamento eficiente dos dados.
-- **Extras**: Melhorias ou funcionalidades adicionais.
+- ✅ **Funcionalidade**: O aplicativo atende aos requisitos propostos?
+- ✅ **Organização do Código**: Estrutura e boas práticas.
+- ✅ **Usabilidade**: Experiência do usuário e design responsivo.
+- ✅ **Performance**: Carregamento eficiente dos dados.
+- ✅ **Extras**: Melhorias ou funcionalidades adicionais.
 
 ---
-
-Feito com ❤️ por [Seu Nome]
 

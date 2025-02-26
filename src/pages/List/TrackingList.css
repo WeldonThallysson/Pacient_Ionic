@@ -1,0 +1,13 @@
+
+
+.container_geral {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.title_patient {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}

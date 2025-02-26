@@ -1,0 +1,54 @@
+/* Estilos para a tela de Detalhes do Paciente */
+.container_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0 1rem;
+}
+.container_title {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .info-group {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  
+  .info-group p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  
+  /* Tag de Acompanhamento */
+  .tracking-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  .tracking-tag .ion-chip {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .tracking-tag .ion-button {
+    margin-left: 10px;
+  }
+  

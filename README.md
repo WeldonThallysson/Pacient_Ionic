@@ -1,104 +1,107 @@
-Desafio Técnico - Desenvolvedor Frontend (Ionic)
+# Desafio Técnico - Desenvolvedor Frontend (Ionic)
 
-🔄 Como Clonar o Repositório
-
-Para clonar este repositório, utilize o seguinte comando:
-
- git clone https://github.com/seu-usuario/seu-repositorio.git
-
-Em seguida, navegue até a pasta do projeto:
-
-cd seu-repositorio
-
-Instale as dependências necessárias:
-
-npm install
-
-Para iniciar o projeto em modo de desenvolvimento:
-
-npx ionic serve
-
-✅ Objetivo
+## 🌟 Objetivo
 
 Criar um aplicativo Ionic para listar e exibir detalhes de pacientes consumindo uma API fictícia.
 
-✅ Requisitos
+---
 
-Tela de Listagem de Pacientes
+## 📄 Requisitos
 
-Exibir uma lista de pacientes com nome, e-mail e telefone.
+### 🗂️ Tela de Listagem de Pacientes
 
-Possuir um campo de busca para filtrar pacientes pelo nome.
+- Exibir uma lista de pacientes com nome, e-mail e telefone.
+- Possuir um campo de busca para filtrar pacientes pelo nome.
 
-Tela de Detalhes do Paciente
+### 🗂️ Tela de Detalhes do Paciente
 
-Exibir nome, e-mail, telefone, endereço e nome de usuário.
+- Exibir nome, e-mail, telefone, endereço e nome de usuário.
+- Botão para marcar o paciente como "em acompanhamento".
 
-Botão para marcar o paciente como "em acompanhamento".
+### 🗂️ Tela de Pacientes em Acompanhamento
 
-Tela de Pacientes em Acompanhamento
+- Listar pacientes marcados como "em acompanhamento".
+- Permitir remoção de pacientes da lista.
 
-Listar pacientes marcados como "em acompanhamento".
+### 📊 Consumo de API
 
-Permitir remoção de pacientes da lista.
+- Utilizar a seguinte API fictícia para obter os pacientes:
+  ```http
+  GET https://fakestoreapi.com/users
+  ```
+- Exibir um loader enquanto os dados estão sendo carregados.
 
-Consumo de API
+### 🎨 Estilização e UX
 
-Utilizar a seguinte API fictícia para obter os pacientes:
+- Utilizar componentes do Ionic para manter um design limpo e responsivo.
+- Aplicar uma identidade visual básica voltada para saúde.
 
-GET https://fakestoreapi.com/users
+---
 
-Exibir um loader enquanto os dados estão sendo carregados.
+## 🛠️ Ferramentas Utilizadas
 
-Estilização e UX
+- **Ionic 8**
+- **React**
+- **TypeScript**
+- **Zustand (Gerenciamento de estado global)**
+- **React Query (Gerenciamento de estado pelo servidor)**
+- **Axios (Requisições HTTP)**
+- **Capacitor Preferences (Persistência de dados)**
+- **Custom Hooks (Organização do código)**
 
-Utilizar componentes do Ionic para manter um design limpo e responsivo.
+---
 
-Aplicar uma identidade visual básica voltada para saúde.
+## 💪 Funcionalidades Extras Implementadas
 
-✅ Tecnologias Esperadas
+- 🔍 **Filtro de pesquisa personalizado**
+- 🛠️ **Arquitetura de projeto e estrutura profissional**
+- 🌈 **Design limpo e simples**
 
-Ionic 8
+---
 
-React
+## 📚 Instalação e Execução
 
-TypeScript
+1. Clone o repositório:
+   ```sh
+   git clone (URL do repositório)
+   ```
+2. Instale as dependências:
+   ```sh
+   npm install
+   # ou
+   yarn install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-✅ Entrega
+---
 
-Criar um repositório no GitHub contendo o projeto.
+## 🌎 Estrutura de Arquivos
 
-Adicionar um README com instruções de instalação e uso.
+- **`src/App.tsx`** - Estrutura base do projeto, incluindo providers e rotas.
+- **`src/global.d.ts`** - Declarações globais de tipagem.
+- **`src/index.css`** - Estilização global.
+- **`src/main.tsx`** - Renderização principal da aplicação.
+- **`src/hooks/`** - Custom Hooks para organização do código.
+- **`src/store/`** - Estado global gerenciado com Zustand.
+- **`src/services/`** - Serviços de comunicação com a API (Axios).
+- **`src/pages/`** - Telas da aplicação (Listagem, Detalhes, Acompanhamento).
 
-Enviar o link do repositório.
+---
 
-✅ Critérios de Avaliação
+## 📊 Critérios de Avaliação
 
-Funcionalidade: O aplicativo atende aos requisitos propostos?
+- **Funcionalidade**: O aplicativo atende aos requisitos propostos?
+- **Organização do Código**: Estrutura e boas práticas.
+- **Usabilidade**: Experiência do usuário e design responsivo.
+- **Performance**: Carregamento eficiente dos dados.
+- **Extras**: Melhorias ou funcionalidades adicionais.
 
-Organização do Código: Estrutura e boas práticas.
+---
 
-Usabilidade: Experiência do usuário e design responsivo.
-
-Performance: Carregamento eficiente dos dados.
-
-Extra: Alguma melhoria ou funcionalidade adicional que agregue valor ao projeto.
-
-🛠️ Ferramentas e Funções Adicionais
-
-🔍 Tratamento para filtro de pesquisa personalizado
-
-📂 Persistência dos dados utilizando Capacitor Preferences
-
-💡 Arquitetura de projeto e estrutura profissional
-
-🛠️ Utilização de Gerenciador de estado global (Zustand)
-
-🎮 Utilização de Gerenciador de estado pelo servidor (React-Query)
-
-📊 Utilização da biblioteca Axios
-
-🔧 Utilização de Custom Hooks para organização das funções de cada página ou tela
-
-🌟 Utilização de Design Limpo e Simples
+Feito com ❤️ por [Seu Nome]
 

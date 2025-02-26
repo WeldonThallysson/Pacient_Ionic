@@ -21,7 +21,7 @@ import { theme } from "../../global/theme";
 import { useHistory } from "react-router";
 
 const TrackingList = () => {
-  const history = useHistory()
+  const history = useHistory();
 
   const {
     accompanyingPatients,
@@ -51,14 +51,15 @@ const TrackingList = () => {
                 <h2>
                   {item.name.firstname} {item.name.lastname}
                 </h2>
-                <p>Em Acompanhamento</p>
+                <p className="progress">Em Acompanhamento</p>
               </IonLabel>
 
-              <IonButton 
-               fill="clear"
-               onClick={() => {
-                history.push(`/detailspacient/${item.id}`)
-              }}>
+              <IonButton
+                fill="clear"
+                onClick={() => {
+                  history.push(`/detailspacient/${item.id}`);
+                }}
+              >
                 <IonIcon
                   slot="icon-only"
                   style={{
@@ -70,18 +71,17 @@ const TrackingList = () => {
               </IonButton>
 
               <IonButton
-                style={{
-                  padding: 0,
-                }}
-                fill="clear"
                 onClick={() => {
                   handleRemoveAccompanyingPatients(item.id);
-                }} // adicionar função para adicionar ao acompanhamento
+                }}
+                fill="clear"
+                color="danger"
               >
                 <IonChip
                   style={{
                     backgroundColor: theme.colors.red,
                     color: theme.colors.white,
+                    fontSize: 13,
                   }}
                 >
                   <IonLabel>Remover</IonLabel>

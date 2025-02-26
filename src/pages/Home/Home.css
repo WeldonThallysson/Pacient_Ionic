@@ -1,32 +1,31 @@
-
-
 .container__searchlabel {
    display: flex;
    padding: 0px 1rem
+}
+
+
+.loading-container, .empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.loading-container {
+  color: #007bff;
+}
+
+.loading-container h2 {
+  font-weight: bold;
+  color: #2e3236;
 }
 
 .result_Label {
     color: #00638a;
     font-weight: bold
 }
-
-.loading-container, .empty-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    gap: 5px;
-    font-size: 25px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .loading-container {
-    color: #007bff;
-  }
-
-  .loading-container h2 {
-    font-weight: bold;
-    color: #2e3236;
-  }

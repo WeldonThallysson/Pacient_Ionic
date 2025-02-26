@@ -20,7 +20,7 @@ export const useToastStore = create<IToastStore>((set) => ({
   handleShowToast: (state) =>
     set((statePrev) => ({
       dataToast: {
-        ...statePrev.dataToast, // Preserva os valores anteriores
+        ...statePrev.dataToast, 
         showToast: state,
       },
     })),
@@ -28,7 +28,7 @@ export const useToastStore = create<IToastStore>((set) => ({
   handleToastMessage: (message) =>
     set((statePrev) => ({
       dataToast: {
-        ...statePrev.dataToast, // Preserva os valores anteriores
+        ...statePrev.dataToast, 
         toastMessage: message,
       },
     })),
@@ -36,7 +36,7 @@ export const useToastStore = create<IToastStore>((set) => ({
   handleColorToast: (color) =>
     set((statePrev) => ({
       dataToast: {
-        ...statePrev.dataToast, // Preserva os valores anteriores
+        ...statePrev.dataToast, 
         colorToast: color,
       },
     })),

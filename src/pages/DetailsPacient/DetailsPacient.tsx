@@ -25,7 +25,11 @@ import { useAccompanyingPatients } from "../../hooks/useAccompanyingPatients/use
 const DetailsPacient = () => {
   const { detailsUser, handleGetDetailsUsers } = useActionsUsers();
   const { id } = useParams<{ id: string }>();
-  const { accompanyingPatients, handleAddAccompanyingPatients,handleRemoveAccompanyingPatients } = useAccompanyingPatients()
+  const {
+    accompanyingPatients,
+    handleAddAccompanyingPatients,
+    handleRemoveAccompanyingPatients,
+  } = useAccompanyingPatients();
 
   useEffect(() => {
     id && handleGetDetailsUsers({ id });
@@ -82,52 +86,69 @@ const DetailsPacient = () => {
           {/*tag de acompanhamento */}
 
           <div className="tracking-tag">
-
-          {detailsUser && !accompanyingPatients.some((patient) => patient.id === detailsUser?.id) ? (
-                   <IonButton
-                   style={{
-                    padding: 0,
-                    margin: 0
+            {detailsUser &&
+            !accompanyingPatients.some(
+              (patient) => patient.id === detailsUser?.id
+            ) ? (
+              <IonButton
+                style={{
+                  padding: 0,
+                  margin: 0,
+                }}
+                fill="clear"
+                onClick={() => {
+                  handleAddAccompanyingPatients(detailsUser);
+                }}
+              >
+                <IonChip
+                  color={"primary"}
+                  style={{
+                    fontSize: 12,
                   }}
-                   fill="clear"
-                   onClick={() => {
-                     handleAddAccompanyingPatients(detailsUser);
-                   }} 
-                 >
-                   <IonChip color={"primary"}>
-                     <IonLabel>Acompanhar</IonLabel>
-                   </IonChip>
-                 </IonButton>
-                ) : (
-                  <>
-                   <IonButton
+                >
+                  <IonLabel>Acompanhar</IonLabel>
+                </IonChip>
+              </IonButton>
+            ) : (
+              <>
+                <IonButton
                   style={{
                     padding: 0,
-                    margin: 0
+                    margin: 0,
                   }}
                   fill="clear"
-                 
                 >
-                  <IonChip  style={{
+                  <IonChip
+                    style={{
                       backgroundColor: theme.colors.greenSea,
-                      color: theme.colors.white
-                  }}>
+                      color: theme.colors.white,
+                      fontSize: 12,
+                    }}
+                  >
                     <IonLabel>Em Acompanhamento</IonLabel>
                   </IonChip>
                 </IonButton>
-                      
-            <IonButton onClick={() => {
-                detailsUser &&
-                handleRemoveAccompanyingPatients(detailsUser.id);
-            }} fill="clear" color="danger">
-              Remover
-            </IonButton>
-                  </>
-                 
-                
-                )}
 
-       
+                <IonButton
+                  onClick={() => {
+                    detailsUser &&
+                      handleRemoveAccompanyingPatients(detailsUser.id);
+                  }}
+                  fill="clear"
+                  color="danger"
+                >
+                  <IonChip
+                    style={{
+                      backgroundColor: theme.colors.red,
+                      color: theme.colors.white,
+                      fontSize: 13,
+                    }}
+                  >
+                    <IonLabel>Remover</IonLabel>
+                  </IonChip>
+                </IonButton>
+              </>
+            )}
           </div>
         </div>
       </IonContent>

@@ -54,7 +54,7 @@ const Home = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Pacientes</IonTitle>
+          <IonTitle>Kompa Saúde</IonTitle>
         </IonToolbar>
 
         <IonToolbar>
@@ -116,7 +116,6 @@ const Home = () => {
                     onClick={() => history.push(`/detailspacient/${item.id}`)}
                   >
                     <IonIcon
-                      slot="icon-only"
                       style={{
                         fontSize: 25,
                         color: theme.colors.grayLight,
@@ -137,7 +136,12 @@ const Home = () => {
                         handleAddAccompanyingPatients(item);
                       }}
                     >
-                      <IonChip color={"primary"}>
+                      <IonChip
+                        color={"primary"}
+                        style={{
+                          fontSize: 12,
+                        }}
+                      >
                         <IonLabel>Acompanhar</IonLabel>
                       </IonChip>
                     </IonButton>
@@ -155,6 +159,7 @@ const Home = () => {
                         style={{
                           backgroundColor: theme.colors.greenSea,
                           color: theme.colors.white,
+                          fontSize: 12,
                         }}
                       >
                         <IonLabel>Acompanhando</IonLabel>
